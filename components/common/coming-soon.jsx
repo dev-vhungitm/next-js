@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { PrimaryButton } from './buttons';
 import styles from './coming-soon.module.scss';
 
-export const ComingSoon = () => {
+const ComingSoon = () => {
   const title = 'Coming Soon';
   const message = 'This page is under development. Please try again once we are done';
   const notFoundImageURL = '/media/404.webp';
@@ -23,3 +23,5 @@ export const ComingSoon = () => {
     </div>
   );
 };
+
+export default ComingSoon;

@@ -1,9 +1,9 @@
-import { ReduxProvider } from '..';
+import ReduxProvider from '../redux-provider';
 import styles from './default-layout.module.scss';
-import { Footer } from './footer';
-import { Header } from './header';
+import Footer from './footer';
+import Header from './header';
 
-export const DefaultLayout = ({ children }) => {
+const DefaultLayout = ({ children }) => {
   return (
     <div className={styles.main}>
       <ReduxProvider>
@@ -14,3 +14,5 @@ export const DefaultLayout = ({ children }) => {
     </div>
   );
 };
+
+export default DefaultLayout;

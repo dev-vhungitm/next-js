@@ -1,12 +1,12 @@
-import { PrimaryButton } from '@/components';
 import { pathnames } from '@/constants';
 import { headers } from 'next/headers';
 import Image from 'next/image';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
+import PrimaryButton from './buttons/primary-button';
 import styles from './not-found.module.scss';
 
-export const NotFound = () => {
+const NotFound = () => {
   const title = 'Page Not Found';
   const message = 'The page you are looking is not found';
   const notFoundImageURL = '/media/404.webp';
@@ -31,3 +31,5 @@ export const NotFound = () => {
     </div>
   );
 };
+
+export default NotFound;

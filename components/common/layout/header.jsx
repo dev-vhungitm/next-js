@@ -5,11 +5,11 @@ import { useWindowDimensions } from '@/hooks';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { PrimaryButton } from '../buttons';
+import PrimaryButton from '../buttons/primary-button';
 import Logo from '../logo';
 import styles from './header.module.scss';
 
-export const Header = () => {
+const Header = () => {
   const contactUsTitle = 'Contact Us';
   const screenBreakpoint = 992;
   const windowDimensions = useWindowDimensions();
@@ -202,3 +202,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;

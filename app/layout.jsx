@@ -1,4 +1,4 @@
-import { DefaultLayout, ReduxProvider } from '@/components';
+import DefaultLayout from '@/components/common/layout/default-layout';
 import { strings } from '@/constants';
 import '@/styles/globals.scss';
 
