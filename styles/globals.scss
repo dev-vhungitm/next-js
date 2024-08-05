@@ -1,0 +1,27 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  outline: unset;
+  font-family: $font-family;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: unset;
+  background: unset;
+  color: $primary-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@import './button.scss';
+@import './container.scss';
